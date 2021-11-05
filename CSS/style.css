@@ -13,9 +13,9 @@ body {
     margin: auto;
 }
 
-#teste {
+/*#teste {
     text-align: center;
-}
+}*/
 
 #title, .subtitle, .post_title{
     color:black;
@@ -31,17 +31,17 @@ a {
     color: black;
 }
 
-.title_image {
+/*.title_image {
     width: 10%;
     text-align: center;
-}
+}*/
 
 #subtitle {
     color: blue;
 }
 
 .post_title{
-    font-size: 16px;
+    font-size: 16vh;
     font-style: italic;
     margin: 0;
     margin-bottom: 15px;
