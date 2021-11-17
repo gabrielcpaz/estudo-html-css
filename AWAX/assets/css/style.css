@@ -70,6 +70,19 @@ header {
     color: #CCC;
 }
 
+.button {
+    display: inline-block;
+    background-color: #B28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
@@ -115,19 +128,6 @@ header {
     margin-top: 20px;
 }
 
-.banner a {
-    display: block;
-    background-color: #B28756;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
-
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -153,7 +153,6 @@ header {
 }
 
 .default {
-    background-color: red;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -184,7 +183,8 @@ header {
     background-color: #f7f7f7;
 }
 
-.default.light .section-title {
+.default.light .section-title,
+.default.light .section-body {
     color:#000;
 }
 
@@ -192,4 +192,95 @@ header {
     background-color: #000;
 }
 
-.default.dark .sec 
+
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #fff; ;
+}
+
+
+
+
+/* CSS - ÁREAS ESPECÍFICAS */
+
+.section-aboutus {
+    display: flex;
+}
+
+.section-aboutus--left {
+    flex: 1;
+}
+
+.section-aboutus--left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section-aboutus--right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px
+}
+
+.section-service:first-child { /* só executa no primeiro elemento */
+    border-left: 1px solid #333;
+}
+.section-service h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-projects--filters {
+    border: 1px solid #CCC;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li {
+    list-style: none;
+}
+
+.section-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #CCC;
+    color: #555;
+}
+
+.section-projects--filters li:first-child {
+    border-left: 0;
+}
